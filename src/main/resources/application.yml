@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+
+application:
+  ecnf:
+    api:
+      path: /
+
+management:
+  endpoints:
+    web:
+      base-path: /

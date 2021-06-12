@@ -1,0 +1,25 @@
+server:
+  port: ${SERVER_PORT:9060}
+  servlet:
+    context-path: /manager-requieriments/v1
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+  application:
+    name: manager-requieriments-v1
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/management?autoConnect=true
+    driver: com.mysql.cj.jdbc.Driver
+    username: root
+    password:
+
+info:
+  project:
+    version: 1.0.0
+    title: manager-requieriments
+    description: Gestor de Requerimientos
+    expose.package: com.requirementsmanagements.project.expose
